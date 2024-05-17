@@ -1,0 +1,137 @@
+#nametag{
+    font-family: math;
+}
+#display,#display2 {
+    background-color: transparent;
+    font-size: 2em;
+    color: black;
+    width: 100%; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+.box,.box2{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    background-color: rgb(167, 158, 158);
+    width: 100%!important; 
+    margin: 20px auto; 
+    padding: 50px;
+}
+.box:hover{
+     -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+}
+.box2:hover{
+    -webkit-animation-name: pulse;
+   animation-name: pulse;
+   -webkit-animation-timing-function: ease-in-out;
+   animation-timing-function: ease-in-out
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(184, 174, 174);
+}
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto; 
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        width: 60%; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        width: 40%; 
+    }
+}
+#textInput{
+    border-color: transparent;
+    background-color: rgb(167, 158, 158);
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 7px rgb(109, 107, 107),
+    inset 3px 3px 5px black;
+    padding: 10px;
+}
+#textInput::placeholder{
+    color: rgb(92, 89, 89);
+    font-weight: bold;
+}
+.logo{
+    width: 20%;
+}
